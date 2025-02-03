@@ -67,7 +67,7 @@ header {
 .main-banner {
     /* font-family:  'Meow Script', cursive; */
     font-family: "Caveat", serif;
-    margin-top: 200px;
+    margin-top: 150px;
     font-size: 50px;
 
 }
@@ -75,7 +75,8 @@ header {
 
 
 .aboutMe {
-    margin-top: 400px;
+    margin-top: 60px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
     padding: 20px 60px 20px 60px;
