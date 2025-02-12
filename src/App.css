@@ -1,0 +1,185 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(53, 53, 53);
+  background-color: rgb(243, 243, 243);
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  /* background-color: rgb(45, 45, 45); */
+  z-index: 1000;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0px 0px 10px 5px rgb(232, 232, 232);
+
+}
+
+.header-txt-container {
+  display: flex;
+ 
+}
+
+.x-mark {
+  margin: 8px 10px 0 10px;
+  position: relative;
+  width: 10px;
+  height: 10px;
+ 
+}
+
+.x-mark::before,
+.x-mark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1.5px;
+  /* 선 두께 */
+  height: 100%;
+  background-color: rgb(119, 119, 119);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.x-mark::after {
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.header-box {
+  margin-top: 13px;
+  width: 10px;
+  height: 3px;
+  background-color: rgb(72, 72, 72);
+}
+
+.main-banner {
+  /* font-family:  'Meow Script', cursive; */
+  font-family: "Caveat", serif;
+  margin-top: 150px;
+  font-size: 50px;
+
+}
+
+
+.body-container{
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutMe {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 60px 20px 60px;
+  width: 35%;
+  /* border: 1px solid rgb(146, 146, 146); */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgb(232, 232, 232);
+  /* background-color: rgb(247, 247, 247); */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-container {
+  margin-top: 80px;
+  width: 35%;
+}
+
+.project {
+  margin-top: 150px;
+  margin-bottom: 300px;
+}
+
+.pre-project {
+  margin-bottom: 300px;
+}
+
+
+
+.diagonal-line {
+  width: 15px;
+  border-bottom: 1.5px solid #565656;
+  transform: rotate(130deg);
+  display: block;
+  margin: 10px auto;
+  /* 자동 마진을 사용해 가운데 정렬 부모의 가로 영역에서 자동 정렬됨*/
+}
+
+
+/* 인디케이터터 */
+.floating-indicator {
+  position: fixed;
+  top: 50%;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transform: translateY(-50%);
+}
+
+/* 가로정렬(텍스트) */
+.indicator-wrapper {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 10px; /* 원과 글씨 사이 여백 */
+}
+
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: lightgray;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.indicator.active {
+  background-color: #5f5f5f;
+  transform: scale(1.2);
+}
+
+
+.indicator-text {
+  font-size: 15px;
+  color: rgb(160, 160, 160); 
+  white-space: nowrap; 
+  font-style: italic;
+}
+
+
+.indicator-wrapper .indicator.active + .indicator-text {
+  color: rgb(80, 80, 80); 
+  font-weight: 600; 
+}
+
+.indicator-wrapper :hover{
+  transform: scale(1.1); 
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+
+}
