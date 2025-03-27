@@ -106,7 +106,7 @@ ul {
 
 .project-container {
   margin-top: 80px;
-  width: 35%;
+  width: 100%;
 }
 
 .project {
@@ -118,7 +118,16 @@ ul {
   margin-bottom: 300px;
 }
 
-
+.project-box{
+  display: flex;
+  justify-content: center; /* 전체 가운데 정렬 */
+  align-items: center;     /* 세로 정렬 (글이 높이 다를 때 대비) */
+  gap: 20px;               /* 이미지와 글 사이 간격 */
+  margin-top: 80px;
+  flex-wrap: wrap;         /* 반응형 대응 */
+  text-align: left;        /* 설명은 왼쪽 정렬 */
+  width: 100%;
+}
 
 .diagonal-line {
   width: 15px;

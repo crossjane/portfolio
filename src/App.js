@@ -57,7 +57,6 @@ return (
               </p>
           </div>
       </div>
-      <div className="career">  
 
       </div>
       <div className="project-container">
@@ -69,10 +68,24 @@ return (
                       부족했던 공부를 목적으로 같은 기능을 다양한 방법으로 시도해보며 코드의 이해도를 높였습니다.
                   </p>
                   </p>
-                  <li style={{marginTop:"80px"}}>아이콘 + 링크 + 간단설명 </li>
-                  <li style={{marginTop:"80px"}}>아이콘 + 링크 + 간단설명 </li>
-                  <li style={{marginTop:"80px"}}>아이콘 + 링크 + 간단설명 </li>
-                  <li style={{marginTop:"80px"}}>아이콘 + 링크 + 간단설명 </li>
+                  <div className='project-box'>
+                    <li style={{marginTop:"80px"}}>
+                        <a
+                            href="http://ec2-13-208-175-84.ap-northeast-3.compute.amazonaws.com:4000/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                        <img src="/img/todoList.jpg" alt="프로젝트 미리보기" width="200" />
+                        </a> 
+                        <div className='box-script'>
+                        React 작동 원리 습득 순수 자바스크립트로 작성한 Todo List를 React로 리팩토링하며,<br/> React의 작동 원리와 상태 관리 방식을 실질적으로 익히고자 하였습니다.
+                        </div>
+                    </li>
+                       
+                  </div>
+                    <li style={{marginTop:"80px"}}>아이콘 + 링크 + 간단설명 </li>
+                    <li style={{marginTop:"80px"}}>아이콘 + 링크 + 간단설명 </li>
+                    <li style={{marginTop:"80px"}}>아이콘 + 링크 + 간단설명 </li>
               </ul>
           </div>
           <div className="project">
@@ -99,7 +112,7 @@ return (
               </ul>
           </div>
       </div>
-    </div>
+    
     </>
 
 
